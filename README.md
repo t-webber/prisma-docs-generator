@@ -1,4 +1,6 @@
-## Prisma Documentation Generator
+# Prisma Documentation Generator
+
+> This is a fork from [https://github.com/pantharshit00/prisma-docs-generator] which is more up-to-date.
 
 Automatically generate a reference from your Prisma Schema. This package contains a prisma generator so reference will automatically update everytime you will run `prisma generate`
 
@@ -9,7 +11,7 @@ Automatically generate a reference from your Prisma Schema. This package contain
 1. Install this package using:
 
 ```shell
-npm install -D prisma-docs-generator
+npm install -D git+https://github.com/t-webber/prisma-docs-generator
 ```
 
 2. Add the generator to the schema
@@ -56,11 +58,3 @@ This package also ships with a CLI which is used to serve the docs right now. It
 
 Serves the static html which the generator generated. It reads the output path from the prisma schema or it will use the default.
 Use `--port` or `-p` to change the port the express server uses.
-
----
-
-### License
-
-MIT Harshit Pant
-
-(This is not an official Prisma project. It is personally maintained by [me](https://github.com/pantharshit00) )
